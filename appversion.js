@@ -23,6 +23,16 @@ function getAppVersionSync () {
   }
 }
 
+function getAppVersionSyncWithPath (path) {
+  try {
+    let obj = require(join(path, JSON_FILE))
+    delete obj.config
+    return obj
+  } catch (err) {
+    throw new Error(err)
+  }
+}
+
 /**
  * Returns the content of appversion.json as a object.
  * Async version.
