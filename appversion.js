@@ -134,3 +134,4 @@ exports.getAppVersionSync = getAppVersionSync
 exports.getAppVersion = getAppVersion
 exports.composePatternSync = composePatternSync
 exports.composePattern = composePattern
+exports.getAppVersionSyncWithPath = getAppVersionSyncWithPath
